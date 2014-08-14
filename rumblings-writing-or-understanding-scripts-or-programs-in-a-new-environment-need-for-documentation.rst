@@ -29,3 +29,7 @@ Now, who should care to produce the rest of the documentation?
 *Users who went through such things already!*
 **Document it yourself!!** You might be helping someone who need it/need to know. Do your part and your next generation users would build from there. Unless your previous users (of the same/similar products) cared to do so you wouldn't be doing what you are able to do now this efficiently!
 *Conclusion:* The 'notes/tips/thing-to-do-after-installing posts by bloggers' should be our 'next points of reference'. They would dealing with 'general pitfalls', 'corner cases' which are more likely encountered in your later points of usage of that product. If none exist, **Create them yourself**
+
+**UPDATE:** Just the next day I recorded this content, I came across this page: https://www.atlassian.com/git/. Though I naturally was at the 'Documentation' section of git-scm.com (The original site on Git project contrary to what many see GitHub as), I knew I am looking for more than the 'Basic Commands' and 'Basic Concepts'. The author of this page neatly differentiated between 'Git Tutorials' and 'Git Workflows'.
+
+Having worked with 'Mercurial' and 'Git', 'Git Workflows' section is what I need at this point.
