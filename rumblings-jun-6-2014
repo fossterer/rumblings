@@ -1,0 +1,11 @@
+Activity:
+---------
+
+SITUATION:	To determine which files are being updated when initiating a process/ using an application
+
+MOTIVATION:   	It has always been on mind since it could help me determine what files are being created by a new installation.
+	    Now that I am working on Mozilla Firefox BUG 1017202, I need to measure a tooltip which appears only on the first usage! It means I have to create a new Firefox user profile everytime to test it! Wait! How does """Firefox know""" that I am using it 'not for the first time???' A value! stored somewhere
+	    Yayy! Now I have to find the file being accessed and get it under my control.
+
+APPROACH:   	  A Stackoverflow question showed that 'lsof -p <PID>' lists all files used by a process.
+		  PID?? Use 'ps -e|grep firefox'

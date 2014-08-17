@@ -1,0 +1,18 @@
+Idea:
+------
+
+Develop an artefact that prevents pop-ups; functionality can be comparable to the current day's 'adBlock' but is as minimal as possible; We're not going to strip off ads but only avoid pop-overs, new windows that irritate a user during browsing
+
+Design Choices:
+----------------
+
+Plugin/Core component(read as 'implemented in the core code of the browser') :-
+
+* First, develop as a plugin
+   - It should be allowing On/Off and logs all activities of ON and OFF
+* Observe the patterns (URLs/sites etc.) and then proceed to implement them in the code
+
+Comments:
+----------
+The plugin could be contributed to the 'Browser's official Plugin Repository';
+The core comoponent implementation cannot be contributed as such since it might lack 'Generality'; Though, unexpected 'New Windows' idea could do

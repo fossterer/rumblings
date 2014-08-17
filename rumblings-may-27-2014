@@ -1,0 +1,20 @@
+Idea :
+-------
+Any notification (WhatsApp, SMS, Voice Call etc.) should fire a notification on my Ubuntu Desktop.
+
+Intention:
+----------
+The user should not feel disturbed needing to unlock his/her phone and look at.. only to find that the notification is non-urgent
+
+
+
+Idea :
+-------
+Setup a web-page highlighter that allows your higlights on a web page to be shareable
+
+Note:
+------
+The URL of the page should explicitly show the original URL.
+Cache the page in your server so that any updates to the original page or URL don't disturb you:
+      Than caching the entire page, find the line no./pixel position OR
+      	   more inteliigently, the HTML <p> no.

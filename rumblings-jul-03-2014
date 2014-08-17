@@ -1,0 +1,8 @@
+Learning while doing; How a project I took just out of interest is teaching me more:
+-----------------------------------------------------------------------------
+
+I contacted dholbert ages ago that I am interested in fixing compile-time warnings in the Mozilla codebase. Discussions went for a few days though I shifted my focus onto fixing a few Good First Bugs. Now I got 13 out of 15 bugs fixed and hence starting the Real Work!
+
+I see that there's a -Wreorder flagged. I wonder what this is.. A quick online search pointed me to this: http://stackoverflow.com/questions/1828037/whats-the-point-of-g-wreorder. Now I see that C++ structs have something similar to 'Constructors' as 'Member Initializers'. I never earlier learned that 'structs' have 'constructors'! yayy..!
+
+More information here: http://en.cppreference.com/w/cpp/language/initializer_list

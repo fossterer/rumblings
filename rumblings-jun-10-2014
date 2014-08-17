@@ -1,0 +1,38 @@
+IDEA:
+-----
+
+	To design a pop-up window blocker (stress on "window" blocker) which is fine with ads on the side of browser. We're concerned of only the annoying pop-up/pop-under windows.
+
+	Mozilla Firefox currently provides a 'Block pop-up windows autoatically' yet a few websites manage to display their pop-up/pop-under windows. For POCs, see "Pictures/pop-up-windows-[1.png,2-3.mp4]". I would have to get into the codebase for this pop-up blocker and --
+*	First, hardcode the URLs of pop=up windows
+*	Next, generalisse the approach
+
+Approach:
+---------
+
+	This night, I'm grepping (at mxr.mozilla.org) to find the appropriate codebase and analyse the code.
+	Tomorrow, I would be contacting people over IRC
+
+-------------------------------------------------------------------------------
+
+Thoughts:
+----------
+
+Today I was reading about Frederich Nietzsche --
+"... and argues that Köhler may be projecting twentieth-century understandings of sexuality on nineteenth-century notions of friendship.[122]"
+
+Source:	 https://en.wikipedia.org/wiki/Friedrich_Nietzsche#Relationships_and_sexuality
+
+-------------------------------------------------------------------------------
+
+Sites:
+------
+androidpatterns.com
+mobile-patterns.com
+
+-------------------------------------------------------------------------------
+
+Free Software evangelism:
+-------------------------
+
+When suggesting people about Linux, direct them to comics on your website. The comics can be as simple as stick figures. Refer to "https://duckduckgo.com/?q=an%20update%20is%20available%20comic"

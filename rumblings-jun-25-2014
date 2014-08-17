@@ -1,0 +1,13 @@
+.so files -- analogous to DLLs
+-------------------------------
+
+1) http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html -- This article lists everything you would love to know about .so files.. So pretty... I am so madly impressed that I jumped in excitement when I saw "CGI in C++"; Expected "Computer Generated Imagery" :) but it turned out to be not! :P
+
+If you remember reading about that once existed technology - the equivalent of JSP, PHP.. go ahead to find neat examples there
+
+2) www.eyrie.org/~eagle/notes/rpath.html -- This article is more of a troubleshooting style; use it to determine how to solve " unable to load  libname-of-lib.so" style errors
+
+Many terms around virtualisation ?!?!??!
+-----------------------------------------
+
+www.unhappyghost.com/2014/06/virtualization-hypervisor-vs-Jails-vs-Emulation-vs-host-guest-os.html#.U5Xc24ZhWFA -- deals with this in a good way

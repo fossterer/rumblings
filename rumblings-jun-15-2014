@@ -1,0 +1,12 @@
+IDEA:
+-----
+
+Have all contact no.s in 'Contacts' with country codes.
+     *	 Any entry in contacts should allow itself to  be swiped to be dialled
+     *	 If the user is allowed to make ISD calls, start Dialer
+     *	 Else, invoke the appropriate app which the user might have available in the system/ registered with this Contacts app.
+
+Design Issues:
+--------------
+
+Should this new functionality be implemeneted int 'Contacts' space or'Dialler' space?

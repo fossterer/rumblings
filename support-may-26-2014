@@ -1,0 +1,73 @@
+09:57																		 glob hi!
+09:58																		 glob ok, what's your current login, and what do you want to change it to?
+09:58																		 glob i'll send a notification email to both addresses
+09:58																		 glob once you reply to both, i'll make the change
+09:59																		 fossterer Thank you very much!shashank16392@gmail.com -- used at 'Persona Login'
+09:59																		 fossterer sry
+09:59																		 fossterer shashank16392@gmail.com -- current
+09:59																		 fossterer shashank@linux.com -- new
+09:59																		 glob	   oh, can you also change the name on your current account (to prove ownership)
+09:59																		 fossterer shashank16392 -- current
+10:00																		 glob	   yup.. can you go to https://bugzilla.mozilla.org/userprefs.cgi?tab=account
+10:00																		 glob	   enter something as your real name and hit 'submit changes'
+10:00																		 glob	   you don't need to provide a password for that
+10:00																		 	   glob suggests shashank
+10:00																			   glob	
+10:01																			   glob	got it, ok
+10:01																			   fossterer	I entered it here:- Your real name (optional, but encouraged):
+10:01																			   		glob sends the emails
+10:01																					glob "Shashank VRSN Sabniveesu" perfect
+10:01																					fossterer      yeah.. perfect
+10:02																					glob	       two emails sent
+10:04																					fossterer      Just replied
+10:04																					glob	       hrm
+10:04																					glob	       " There is already an account with the login name shashank@linux.com. "
+10:04																					glob	       ah, i bet you already logged in with it today
+10:04																					glob	       (or yesterday)
+10:04																					fossterer      uhh.. I added that to Persona out of desperation.. that created an account
+10:04																						       glob nukes it
+10:04																						       fossterer  Can I delete its account at bugzilla?
+10:05																						       glob	  no, but i can one moment
+10:05																						       fossterer  
+10:05																						       glob	  The following changes have been made to the user account shashank16392@gmail.com:
+10:05																						       glob	  The login is now shashank@linux.com.
+10:05																						       fossterer  Awesome!
+10:05																						       fossterer  wait..
+10:06																						       fossterer  I choose persona login as.. ?
+10:06																						       fossterer  old email ?
+10:06																						       glob	  NO
+10:06																						       glob	  shashank@linux.com
+10:06																						       glob	  if you log in with your old email, it'll recreate that account
+10:07																						       fossterer  Woww! Thank you very much
+10:07																						       glob	  i can catch that though... yeah; if you accidentally do that now, you'll be told to log in as your @linux.com account
+10:08																						       fossterer  I didn't expect you to be so prompt
+10:08																						       fossterer  Thank you once again!
+10:08																						       glob	  no worries
+10:08																						       fossterer  One more thing..
+10:08																						       fossterer  My Assigned BUgs - still point to shashank16392@gmail.com
+10:09																						       glob	  hrm
+10:09																						       glob	  it shouldn't :|
+10:10																						       glob	  looks right to me -- i see no activity on that account
+10:10																						       glob	  is this via 'my dashboard' ?
+10:11																						       glob	  (i see 4 bugs assigned to shashank@linux.com)
+10:11																						       fossterer  Fine.. that must be a delay.. I logged out and logged in .. all good now!
+10:11																						       glob	  hey, four bugs is excellent!
+10:11																						       glob	  do you want the ability to assign bugs to yourself?
+10:12																						       fossterer  Hahha.. thanks .. that now I am doing something I wanted to make sure all fall under unique login..
+10:12																						       fossterer  hence only this desperation
+10:12																						       fossterer  ohh..
+10:12																						       fossterer  thanks for the offer
+10:12																						       fossterer  I can gain the rivilege now.. right?
+10:12																						       fossterer  *privilege
+10:13																						       glob	  yes; i think you've earned it
+10:13																						       glob	  The following changes have been made to the user account shashank@linux.com:
+10:13																						       glob	  The account has been added to the editbugs group.
+10:13																						       fossterer  By default? or did you do it now?
+10:13																						       glob	  here's the criteria: https://bugzilla.mozilla.org/page.cgi?id=get_permissions.html
+10:14																						       glob	  thank you for your contributions!
+10:14																						       fossterer  ok.. So did you grant me the privilege now?
+10:15																						       glob	  yes
+10:15																						       fossterer  My pleasure.. my interest.. (for your 'Thanks for your contributions')
+10:15																						       fossterer  Thank you for your support for this day!
+For the latest news checkout the blog: http://blog.mibbit.com
+    
