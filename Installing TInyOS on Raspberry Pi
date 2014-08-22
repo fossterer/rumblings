@@ -1,0 +1,124 @@
+DISCLAIMER: This guide is a rewrite of steps listed at "http://tinyos.stanford.edu/tinyos-wiki/index.php/Installing_From_Source". The steps have been written to suite RaspBerry Pi and other ARM platforms running Debian-based distros.
+
+As of this writing, TinyOS has not been built for the ARM architecture. Hence we n﻿﻿﻿﻿﻿﻿eed to compile the relevant packages from source.
+
+Pre-requisites:
+
+* git - to fetch the required source packages
+* python - TinyOS scripts are essentially Python-based
+* A few python-modules that don't come preinstalled on a RaspberryPi
+
+sudo apt-get install git python python-serial python-usb
+
+* Though a few of the following seem unnecessary, the compilation scripts of TinyOS (as of now) are set to confirm their presence. Hence make sure that you have them installed beforehand:
+
+sudo apt-get install automake emacs bison flex gperf gcc-msp430
+
+In case, you couldn't get gcc-msp430, try downloading it from the Debian's Packages section:
+	http://packages.debian.org/wheezy/gcc-msp430
+(Depending on your distro, you need to choose either the 'armhf' or 'armel' variant)
+
+Procedure:
+
+This is a 3-step process :-
+
+1. Fetch the sources and build nesC - (From Wikipedia -- nesC (network embedded systems C), pronounced "NES-see", is a component-based, event-driven programming language used to build applications for the TinyOS platform. TinyOS is an operating environment designed to run on embedded devices used in distributed wireless sensor networks. nesC is built as an extension to the C programming language with components "wired" together to run applications on TinyOS.)
+	* Install nesC to make them available system-wide
+2. Fetch the sources and build TinyOS
+	* Install TinyOS tools to make them available system-wide
+3. Informing the system about the location of TinyOS tools
+
+Friendly Suggestion: Make a directory - 'Packages' and perform all the below operations navigating into this directory
+
+1. Fetch the sources and build nesC :
+-------------------------------------
+-> Getting sources:
+	git clone git://github.com/tinyos/nesc.git
+
+-> Building and installing:
+	cd nesc
+	./Bootstrap
+	./configure
+	make
+	make install
+
+2. Fetch the sources and build TinyOS :
+---------------------------------------
+-> Getting sources:
+	git clone git://github.com/tinyos/tinyos-main.git
+
+-> Building and installing:
+	cd tinyos-main/tools
+	./Bootstrap
+	./configure
+	make
+	make install
+
+3. Informing the system about the location of TinyOS tools :
+------------------------------------------------------------
+-> Create a profile with necessary environment variables:
+
+   Move back into the root of the Tiny-OS directory
+	cd ..
+
+   Assuming your text editor is 'leafpad' (or your favourite editor)
+	leafpad tinyos.env
+	
+   Now enter the following lines in the file --
+	# Here we setup the environment
+	# variables needed by the tinyos 
+	# make system
+
+	export TOSROOT="$HOME/Packages/tinyos-main"
+	export TOSDIR="$TOSROOT/tos"
+	export CLASSPATH=$CLASSPATH:$TOSROOT/support/sdk/java
+	export MAKERULES="$TOSROOT/support/make/Makerules"
+	export PYTHONPATH=$PYTHONPATH:$TOSROOT/support/sdk/python
+
+-> Make your shell aware of this:
+
+	echo "source $HOME/tinyos.env">$HOME/.bashrc
+
+For the changes to take effect, you have to close the terminal and start a new one.
+
+Testing a sample program:
+-------------------------
+Connect your mote to one of the USB ports. To ensure that the mote is detected, type the following:
+	$ motelist
+
+This should produce an output similar to this:
+
+ 	Reference  Port               Description
+	---------- ------------------ --------------------------------------
+	Crossbow   /dev/ttyUSB0       Telos (Rev B 2009-11-27)
+
+
+TinyOS comes a with a set of pre-written programs:
+
+* Move to your 'apps' directory
+	cd Packages/tinyos-main/apps
+* We will use the 'Blink' program for our testing.
+	cd Blink
+* To generate the 'object' file and the 'image' to be written to the mote, issue --
+	make telosb
+* To write the image to the mote
+	make telosb install
+
+You should see something like this:
+
+installing telosb binary using bsl
+tos-bsl --telosb -c 16 -r -e -I -p build/telosb/main.ihex.out
+MSP430 Bootstrap Loader Version: 1.39-telos-8
+Mass Erase...
+Transmit default password ...
+Invoking BSL...
+Transmit default password ...
+Current bootstrap loader version: 1.61 (Device ID: f16c)
+Changing baudrate to 38400 ...
+Program ...
+2782 bytes programmed.
+Reset device ...
+rm -f build/telosb/main.exe.out-2 build/telosb/main.ihex.out
+
+After a few continuous blinks (which indicate that the mote is being programmed), you see the LEDs on the mote to be toggling resembling 3-digit binary codes. This confirms that your build is successful.
+Happy tinkering!
