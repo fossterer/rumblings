@@ -1,0 +1,360 @@
+
+- Saturday November 09 2013, 06:13:51 PM -
+ - okao has joined the room
+- Saturday November 09 2013, 06:15:00 PM -
+ - Silmarilion has disconnected (Read error: Connection reset by peer)
+- Saturday November 09 2013, 06:15:05 PM -
+ - BenNZ has joined the room
+- Saturday November 09 2013, 06:15:25 PM -
+ - Silmarilion has joined the room
+- Saturday November 09 2013, 06:15:33 PM -
+ - jned has joined the room
+- Saturday November 09 2013, 06:16:07 PM -
+ - Silmarilion has disconnected (Client Quit)
+- Saturday November 09 2013, 06:16:15 PM -
+ - grobda24 has disconnected (Ping timeout: 272 seconds)
+- Saturday November 09 2013, 06:16:31 PM -
+jned: I have a disk utility that shows my disk health, what is the program name to install it on another computer. When I do about it just says red hat disk utility
+dvs: smartmontools?
+ - Rosco2 has disconnected (Quit: Leaving)
+jned: dvs, thx, I think it might gnome-disk-utility
+Ghost_In_Zshell: It's not gnome-disk-utility?
+jned: Ghost_In_Zshell, thx
+zykotick9: dvs: while Ghost_In_Zshell is "correct" in this case - i think you gave the "right" answer ;-)
+ - okao has disconnected (Ping timeout: 272 seconds)
+jned: When I run the disk utility it shows me: SMART Status: DISK FAILURE IS IMMINENT
+Ghost_In_Zshell: That's ominous.
+dvs: so.......?
+fossterer: hi ! If I install Mozilla Firefox by downloading .deb, do I get updates regularly? - on debian
+ - Sambler has disconnected (Quit: ZZZzzz…)
+dvs: fossterer: no
+zykotick9: fossterer: NO
+ - sylencecc has joined the room
+fossterer: so I should only stick t the debian repos if I have to get updates?
+ - _polto_ has joined the room
+fossterer: for any software..
+zykotick9: fossterer: YES
+jned: if I want to fix errors on a disk, how would I go about that?
+dvs: fossterer: YES!!!!
+ - adb has disconnected (Ping timeout: 252 seconds)
+Ghost_In_Zshell: Depends. If it's bad blocks - fsck?
+dvs: jned: I'd heed the ominus message
+sylencecc: hi! after upgrading my debian installation to recent testing, some fonts aren't working anymore. i installed the artwiz fonts a while ago (bitmap fonts), they show up in fc-list and in programs like inkscape, but they just look like Sans...andy idea? bitmap fonts are enabled.
+fossterer: What if I added their ppa to sources.list?
+jned: dvs, thx, and what other cases are there?
+zykotick9: fossterer: ppa in sources.list - oh man you're in for trouble...
+jned: dvs, so it's dead eh
+dvs: yup\
+jned: Ghost_In_Zshell, , thx, and what other cases are there?
+ - antonp has disconnected (Ping timeout: 264 seconds)
+fossterer: zykotick9: But why?
+jned: its wierd, cause, the option to check and repair disks is only available when you mounted, but when you try to run that option it says resource busy
+zykotick9: jned: i agree with dvs - if smartmontools is saying "failure imminent", expect it to fail!
+ - markovh has joined the room
+ - FilipeMaia has disconnected (Quit: FilipeMaia)
+zykotick9: fossterer: PPAs are for ubuntu, yet you are asking in #debian.  what Distro are you using?
+jned: zykotick9, yeah true, its already failing, but no way to fix it now, its garbage eh
+Ghost_In_Zshell: jned: Well my hard-coded reaction to seeing imminent failure reports from SMART is to rsync /home and /etc to a backup and Amazon Prime myself a new drive.
+crash_: i had debian wheezy and xfce as desktop environment, but i upgraded to testing and now gnome has taking everything over.
+zykotick9: crash_: s/upgraded/transitioned/
+jned: Ghost_In_Zshell, I already backup what I could, I would just like to fix it if I could
+jned: crash_, gnome is awesome, I was sticking with xfce4 for while but gnome is great if you have a working graphics ddriver
+fossterer: zykotick9: ohh.. My bad! I was using Ubuntu for the last 2 years.. So I called it that way... I turned to Debian a week ago :-)
+ - halu_ has disconnected (Ping timeout: 244 seconds)
+ - antonp has joined the room
+zykotick9: fossterer: well, rule #1 debian != ubuntu
+fossterer: zykotick9: Then what is its equivalent in debian? I mean adding to sources.list
+crash_: jned, yeah i got nothing against gnome, but i had xfce and i would prefer if that is the one that boots up instead of gnome :-)
+fossterer: zykotick9: More rules please...
+zykotick9: fossterer: thankfully, there isn't a direct equivalant right now
+jned: crash_, just remove gnome then
+fossterer: So I can't add third-party repos?
+crash_: jned, yeah that is a way todo it :-P
+ - relix has disconnected (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+jned: crash_, also, gdm3 or even lightdm should select the previously selected desktp environment as your default, so if you log in once to xfce, it will do the same second time
+crash_: jned, if i choose xfce4 it still boots up gnome instead of xfce4
+ - Ghost_In_Zshell has disconnected (Ping timeout: 244 seconds)
+zykotick9: fossterer: you can, but it's NOT debian.  and it's NOT a good idea.
+ - okao has joined the room
+jned: crash_, yeah right, wierd, cause they both use the same something on the low lever or somethig eh, but I can boot into xfce4 here no problem, not sure what happen over there, what display manager?
+ - relix has joined the room
+elvora: df 0kh
+crash_: jned, i'm using lightdm, but i will try to remove gnome instead, that should fix it.
+jned: crash_, or you can install gdm3
+jned: or you can manually set the default with lightdm
+crash_: jned, ok thanks i will try to thinker and see if i can fix it :-)
+ - Droolio has joined the room
+fossterer: zykotick9: I get that.. the whole point of stability... DEBIAN :-)
+ - sxp has joined the room
+ - ziyagi has disconnected (Quit: leaving)
+zykotick9: fossterer: sorry i also should have added "and it's NOT supported in #debian" ;-)
+zykotick9: fossterer: fyi, i'm an ubuntu migrant myself, just a couple of years ahead of you ;-)
+fossterer: ubuntu migrant? you mean FROM ubuntu to DEBIAN?
+zykotick9: obviously...
+fossterer: dude.. howz life here?
+ - shirland has disconnected (Ping timeout: 252 seconds)
+zykotick9: lol, i don't miss ubuntu - that's for sure!  but i don't have the "typical" ubuntu mindframe/mindset... YMMV
+ - tormen0815__ has disconnected (Read error: Operation timed out)
+ - kanja has joined the room
+ * zykotick9 values stability (both debian/and non-debian meanings of that word).  i don't use testing/unsatable.
+ - relix has disconnected (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+fossterer: Obviously I am horrified to see my system look dorky all of a sudden.. I had a different picture of Gnome DE (hmm.. 3.6/3.8 looks) earlier :-P
+fossterer: ohh.. valuing stability.. just let me know.. are you a strict follower of debian - for personal system too? 
+ - tormen0815__ has joined the room
+ - okao has disconnected (Read error: Operation timed out)
+FreezingCold: So I ran 'depmod -a'
+zykotick9: fossterer: oh ya, i use Debian (read "stable") on my desktop and netbooks
+FreezingCold: and I can clearly see my module is in /lib/module/3.0.36+ and uname -r reports 3.0.36+ , but I can't modprobe the modules in there
+ - tty-1 has disconnected (Quit: ChatZilla 0.9.90.1-rdmsoft [XULRunner 22.0/20130619132145])
+ - HALEB0B has joined the room
+ - markovh has disconnected (Ping timeout: 260 seconds)
+ - whirli has disconnected (Ping timeout: 248 seconds)
+fossterer: ayotick9: What about videos at Youtube.. ?
+fossterer: I tried to keep gnash as is for 2 weeks and gave up yesterday :-(
+arthurfiggis: fossterer: i migrated over to debian stable from ubuntu about a week and a half ago myself as well...not too difficult at all really :-) and despite the battering that gnome 3 gets, it does have a very good screen reader installation
+fossterer: got a new friend! :-D
+arthurfiggis: (you'll find  that a lot of videos on youtube are actually html5 compatible now as well though, so in a lot of cases you don't need the flash plugin for those any more)
+zykotick9: fossterer: is ayotick9 me?  try TAB complietion.  YouTube "kinda" works with html5/gnash - but i'd say most videos DON'T play with my setup.  I'm obviously a "free" software guy as well, in part for reason already given.
+ - d_arcy has disconnected (Remote host closed the connection)
+fossterer: yeah tab completion.. I should remember that :-)
+fossterer: ohh no.. this is Empathy!
+ - zymurgy - Zyferus - zykotick9 - 
+ - zymurgy - Zyferus - zykotick9 - 
+ - zymurgy - Zyferus - zykotick9 - 
+ - zymurgy - Zyferus - zykotick9 - 
+ - zymurgy - Zyferus - zykotick9 - 
+fossterer: zykotick9: It isn't supporting TAB completion
+zykotick9: fossterer: so, use a real IRC client...
+ - eddeboy has joined the room
+fossterer: Name that please!
+ - sylencecc has disconnected (Quit: leaving)
+zykotick9: fossterer: xchat is popular with GUI crowd.  irssi or weechat for terminal.
+eddeboy: Hello! I am configuring a server right now (virtually via VMware) and i am at the end of the installation.W When i press finnish installation it just loop sback to the menu where i can choose instalation process... What am i doing wrong? i choosed to install grub, is that the fault?
+fossterer: ***And fossterer is gonna try 'irssi'/'weechat' obviously***
+zykotick9: fossterer: you might want to see "/msg dpkg irssi" before deciding ;-)
+fossterer: let's get back.. I remember signing up for Youtube's HTML5 trial...  but still gnash is interfering I guess...
+fossterer: ohh... /sg dpkg..?? interesting
+ - thelorax123 has joined the room
+zykotick9: fossterer: not many YT vids are HTML5 at this point :-(
+ - unborn has disconnected (Quit: Leaving)
+zykotick9: fossterer: gnash will give you a lot more vids, that pure html5!
+zykotick9: fossterer: i'll brb
+ - zykotick9 has disconnected (Quit: leaving)
+ - v4nelle has disconnected (Remote host closed the connection)
+ - zykotick9 has joined the room
+ - router7 has joined the room
+ - tormen0815__ has disconnected (Ping timeout: 245 seconds)
+ - Guest61157 has disconnected (Ping timeout: 248 seconds)
+ - Engen has disconnected (Ping timeout: 252 seconds)
+ - thelorax123 has disconnected (Remote host closed the connection)
+fossterer: zykotick9: Is gnash still in active development? I feel its in fact preventing videos to take a HTML5 route... [may be that's only me guessing..]
+ - okao has joined the room
+ - Jdbye|Laptop has joined the room
+ - [SkG] has disconnected (Quit: Saliendo)
+zykotick9: fossterer: yes, gnash is still developed!  i don't think it's preventing HTML5 videos, but will be used when HTML5 is not available (i "could" be wrong on that?)
+ - f4cl3y has disconnected (Ping timeout: 248 seconds)
+ - thelorax123 has joined the room
+ - f4cl3y has joined the room
+ - tiron has disconnected (Ping timeout: 264 seconds)
+fossterer: ok.. I'll see disabling flash plugin and check that out
+ - bt6 has joined the room
+ - d45h has disconnected
+fossterer: One more thing... I see the user agent string in Iceweasel is still "Iceweasel", "17.0" and so on.. That has prevented many add-ons from being installed
+ - MaddinXx has joined the room
+ - Kenzumi has disconnected (Quit: Leaving)
+ - eristisk has disconnected (Ping timeout: 240 seconds)
+ - thelorax123 has disconnected (Remote host closed the connection)
+fossterer: Developers at IceWeasel put that in fact they're gonna make sure that useragent string shouldn't trouble users.. I read that.. but still..
+zinx: fossterer: wasn't there some BS with Mozilla corp that prevents you from using their trademarked name if it isn't their pristine source?
+zykotick9: zinx: see "/msg dpkg why iceweasel" for some of the details about the BS
+arthurfiggis: fossterer: well there's nothing really stopping you from downloading a pre-built firefox from mozilla's site and running that instead, that's what i did :-)
+ - thelorax123 has joined the room
+dvs: !tell fossterer about mdn
+themill: fossterer: precisely which addons aren't installing?
+fossterer: "duckduckgo plus"
+themill: installs here with no problems
+ - jusss has joined the room
+ - MaddinXx has disconnected (Ping timeout: 252 seconds)
+arthurfiggis: fossterer: actually yeah, that is one of the ones that installed okay for me in iceweasel as well (debian stable 7.2) :-) perhaps it needs to be reinstalled? not sure what could have happened with it
+ - patriku has disconnected (Ping timeout: 245 seconds)
+ - aquarius has disconnected (Ping timeout: 264 seconds)
+ - thelorax123 has disconnected (Remote host closed the connection)
+ - iderik has disconnected (Quit: iderik)
+ - eddeboy has disconnected (Quit: Page closed)
+fossterer: really? I just installed it in Firefox and when I started Iceweasel it said.. "Incompatible with this version " and so on..
+ - aquarius has joined the room
+arthurfiggis: (but in either case, you do have the option of downloading firefox proper if you ever actuallly need to :-) )
+themill: fossterer: you may want to grab a newer iceweasel from mozilla.debian.net; "iceweasel" is not the problem here, "17" might be, however.
+ - ubiquitous1980 has joined the room
+fossterer: themill: Why don't get a newer version from apt-get upgrade?
+zykotick9: arthurfiggis: choosing incorrectly, to install the non-free Mozilla Firefox, means that you are YO-YO (You're On - Your Own"
+fossterer: zykotick9: *LOL*
+themill: fossterer: debian is quite conservative about forcing new versions at users. New versions require new libraries and that can (and does) have unwelcome consequences for other applications.
+arthurfiggis: zykotick9: oh that's absolutely true yes, i probably should have made that clear as well sorry :-) i was just offering my own experience on doing so, if you do try it, it's not so hard to get running
+themill: dpkg: tell fossterer about stable
+ - thelorax123 has joined the room
+ - a-ha has disconnected (Read error: Connection reset by peer)
+zykotick9: arthurfiggis: i wouldn't make that "wrong" decision ;-)
+arthurfiggis: zykotick9: to each their own i guess? i'd want to have a choice at least, but that's just me :-)
+ - murmelbahn has disconnected (Quit: :f)
+ - nathanhi is now known as nulldevice
+ - murmelbahn has joined the room
+ - ecj has disconnected (Ping timeout: 240 seconds)
+zykotick9: arthurfiggis: IMO, if you choose, non-free.  you've made the wrong "choice" ;-)  best of luck to you.
+ - gr33n7007h has disconnected (Read error: Operation timed out)
+ - nulldevice has disconnected (Disconnected by services)
+ - gr33n7007h has joined the room
+arthurfiggis: zykotick9: i don't really need luck, i'm taking to you from firefox 25 so it does actually work...not sure what your point is, but if you want to make it privately please do so, i don't think this is on-topic :-)
+fossterer: what about the shumway anyway? ;-) Anyone using it?
+fossterer: dpkg: tell fossterer stable
+ - ecj has joined the room
+ - ecj has disconnected (Max SendQ exceeded)
+ - ShapeShifter499 has joined the room
+ShapeShifter499: hi
+zykotick9: arthurfiggis: luckly, for me.  free vs. non-free IS still on topic for #debian ;-)
+ - nathanhi has joined the room
+jned: I have some old garbage os's listed in grub, I wish to remove them, how can I re-run grub to auto-detect the os's I have and regenerate the boot menu, or even just edit the that boot menu
+ - wildc4rd has disconnected (Ping timeout: 244 seconds)
+ - ecj has joined the room
+zykotick9: jned: "update-grub" if they have been removed
+ShapeShifter499: I tried to follow http://unix.stackexchange.com/a/29990 to set up remote decryption via ssh however when it reboots the system wants to connect via eth0 (ethernet). How can I get it to connect to my router via wifi?
+jned: zykotick9, thx
+ - safejav has joined the room
+ - GentileBen has disconnected
+jned: zykotick9, yep, that did it,the again
+ - eristisk has joined the room
+ - Engen has joined the room
+fossterer: **Grrrr** !tell fossterer 'update-grub' doesn't work on a system with lilo
+ - freedomrun has disconnected (Quit: So long and thanks for all the fish)
+ - crash_ has disconnected (Quit: Leaving)
+ - acemi has disconnected (Quit: WeeChat 0.3.8)
+ - CyberGabber has left the room
+zykotick9: fossterer: why in the world - are you using lilo?
+ - gr33n7007h has disconnected (Changing host)
+ - gr33n7007h has joined the room
+ShapeShifter499: any ideas guys?
+fossterer: Because I thought 'I should try this too' just as the idea of coming to Debian
+ - markovh has joined the room
+jusss: …
+fossterer: Did I do something worng?
+ - treaki__ has joined the room
+arthurfiggis: fossterer: i might have missed it changing my irc client settings, what were you trying to do
+zykotick9: fossterer: oh man, lilo is SO retro. at this point.  i barely remember grub1 / grub-legacy stuff at this point... YMMV
+ - LordDeath|OSX has joined the room
+ - caravel is now known as caravel_
+ - zenwryly has disconnected (Excess Flood)
+ - zenwryly has joined the room
+dondelelcaro: k/sb end
+ - dvheumen has joined the room
+ - ash2 has disconnected (Read error: Connection reset by peer)
+dondelelcaro: hrm... that's not going to work so well
+ - ubiquitous1980 has left the room
+ - plot has disconnected (Quit: Leaving)
+ - treaki_ has disconnected (Ping timeout: 245 seconds)
+ - tyn has disconnected (Ping timeout: 252 seconds)
+ - jusss has disconnected (Quit: Bye)
+ - RaphaelT has disconnected (Quit: Coyote finally caught me)
+fossterer: So.. "Debian doesn't force you with new versions until it feels comfortable that it's stable" and it happens only after 2 years ??
+bezaban: debian never forces a version if you specify the dist name in sources.list
+ - RaphaelT has joined the room
+fossterer: what's that?
+ - Se-bash has disconnected (Ping timeout: 264 seconds)
+fossterer: dist name in sources.list?
+bezaban: if you choose to stay on a development branch it will keep you up to date with that branch.  Stable is released in approx. 2 years intervals yes.
+dvs: Debian 7 is wheezy
+zykotick9: !tell fossterer about frankendebian
+ - dvheumen_ has joined the room
+bezaban: you can put 'wheezy' (currently stable) or 'stable' in /etc/apt/sources.list, this will define what version you run
+dvs: Dont put stable!
+bezaban: nope
+zykotick9: fossterer: i'd suggest not getting too excited about testing/unstable(aka sid) if i where you.  and DON'T mix releases... please.  BUT with Debian, you "can" do anything you want.  but so much is "not a good idea".
+fossterer: **LOL*** Frankendebian.. funny play on the name!!
+bezaban: but that's the only case where it will 'force upgrade' you
+zykotick9: foobArrr: see "/msg dkpg ssb" for the "proper" way to backport stuff yourself from sid.
+bezaban: fortress_: the other debian versions are kept up to date, so you will get continous updates by doing apt-get update && apt-get upgrade
+bezaban: but the branches generally update every second year
+bezaban: ie. change status
+bezaban: isn't there a factoid about versions? :-S
+bezaban: !version
+dpkg: Kernel: uname -r, or cat /proc/version.  Package: dpkg -l _pkgname_ , or run apt-cache policy <packagename>.  Miscellaneous commands: try --version on the command.  For the version of Debian, ask me about <debian suite>.
+bezaban: !versions
+zykotick9: fossterer: see my TAB-Fail above to foobArrr (foobArry sorry x3).  but <ssb> is important to know about.
+ - madez_ has joined the room
+madez_: hello #debian!
+fossterer: bezaban: Cool! Currently mine has a few line like - "deb http://ftp.us.debian.org/debian/ wheezy main contrib" 
+ - sxp has disconnected (Quit: Good bye everyone!)
+fossterer: Now Ire move wheezy and I get what I want?
+bezaban: fossterer: you should keep wheezy
+madez_: I'm following the discussion about the init-system in Debian. Im excited to see what debian will choose.
+ - MaddinXx has joined the room
+fossterer: then how do move away from stable thing?
+bezaban: there will be updates to stable
+bezaban: but they are well tested and (mostly) compatible with all the other versions of software for the stable release
+bezaban: unless you know there is something you want from testing you should stay on wheezy
+bezaban: current testing is 'jessie'
+zykotick9: bezaban: security updates to stable - are basically, the best available on any gnu/linux platform!  but don't expect "version" updates on anything!  see "/msg dpkg stable"
+themill: fossterer: you'd probably do better spending some time learning your way around debian before you upgrade to testing.
+fossterer: bazaban: zyotick9: But the updattes say from Iceweasel 17.0 to 18.0 won't occur if I retian wheezy. isn't it?
+ - Spockz has disconnected (Ping timeout: 260 seconds)
+ - dvs has disconnected (Remote host closed the connection)
+bezaban: zykotick9: thanks, but did I contradict that?
+ - f4cl3y has disconnected (Ping timeout: 264 seconds)
+ - alessandro has joined the room
+zykotick9: fossterer: personally, i don't like testing or unstable.  those are just the "development" areas of the "true" debian-stable...  IMO
+fossterer: themill: Sure! Thanks.. 
+ - f4cl3y has joined the room
+ - f4cl3y has disconnected (Client Quit)
+fossterer: themill: And how does it differ from just using Den=bian..? I remind you I used Ubuntu for 2 years and am in a conception that both are same
+fossterer: *Debian
+ - MaddinXx has disconnected (Client Quit)
+FreezingCold: How can I download Debian packages without Debian?
+FreezingCold: http://packages.debian.org/wheezy/firmware-brcm80211
+ - classix has disconnected (Ping timeout: 244 seconds)
+madez_: http://ftp.de.debian.org/debian/pool/non-free/f/firmware-nonfree/firmware-brcm80211_0.36+wheezy.1_all.deb
+qman__: FreezingCold, right on that page, click the "all" hyperlink, then select a mirror
+ - RaphaelT has disconnected (Ping timeout: 272 seconds)
+nonconvergent: fossterer: http://mozilla.debian.net/ You can newer releases of Iceweasel built for your release.
+madez_: You click on the atchitecture you want the package for. then you choose the mirror.
+arthurfiggis: fossterer: i would definitely recommend messing around with the stable release first :-) i haven't been using debian for long but i have used distributions like fedora, where things can break quite readily from update to update...but once you know your way around, testing is great i'm sure
+ - dvheumen has left the room
+ - classix has joined the room
+arthurfiggis: nonconvergent: oh thanks for that, i'll have to bookmark the link :-) iceweasel is what comes with the distro so i like to use that wherever possible
+nonconvergent: I run stable but use the Aurora release.  Although on related lines, Debian does provide security updates to the browser as well.
+ - joncrunchbang has disconnected (Read error: Connection reset by peer)
+ - joncrunchbang has joined the room
+nonconvergent: Which is the point of stable.  No big changes, but it's "supported" with fixes to what few bugs are left and security updates as necessary (via what used to be called volatile, righ?)
+ - Mapley is now known as rainbowdash^
+ - jalalsfs has disconnected (Read error: Operation timed out)
+bezaban: fossterer: why do you need iceweasel 18.0?
+ - jedifrog has disconnected (Quit: WeeChat 0.4.2)
+FreezingCold: qman__: ugh not seeing it
+ - rainbowdash^ is now known as ^rainbowdash
+ - jedifrog has joined the room
+ - jedifrog has disconnected (Changing host)
+ - jedifrog has joined the room
+bezaban: there is no security benefit, so unless you specifically need a function in 18.0 you should stay with the stable branch.  If you really need to you should look into backports
+arthurfiggis: nonconvergent: i think that's a sensible way of doing things really, it's certainly worked out well in practice...i've quite happily moved over from ubuntu to debian with little hassle :-) although backports has provided the few things that i did need new versions of, e.g. nvidia drivers, so that's great
+FreezingCold: ah ha
+FreezingCold: found it
+FreezingCold: thanks
+ - patriku has joined the room
+ - ^rainbowdash is now known as Mapley
+ - Exio4 has joined the room
+ - tomoprime has joined the room
+ - classix has disconnected (Ping timeout: 240 seconds)
+arthurfiggis: with the help of a few people here i got all the capabilities of the fax/scanner/printer/thing upstairs working too...wirelessly :-) i think it was more hassle to set up in windows 8
+ - RaphaelT has joined the room
+ - stomachh has disconnected (Quit: Been around the world and found that only stupid people are breeding. ??[www.t7ds.com.br])
+bezaban: arthurfiggis: fun!
+bezaban: my idea of fun anyway ;-)
+FreezingCold: arthurfiggis: I used my openwrt router to share my printer using pn910 or osmething
+ - mcurran has disconnected (Ping timeout: 264 seconds)
+ - classix has joined the room
+
+
+
+
+FreezingCold: Okay, how the hell can I just tell the device to skip scanning and just connect?
+FreezingCold: is that even possible?
+ - GreenGlow has joined the room
+arthurfiggis: usually for something that a backport doesn't exist for i'll build-dep all the dependencies and build it from source :-) throw everything into /usr/local...i got used to doing that in slackware

@@ -1,0 +1,9 @@
+Tired of attending 'Hacking' Workshops and searching for 'Hacking Tutorials' ? Still googling 'Websites prone to  hacking', 'Sites that are vulnerable to SQL injections' etc.. etc...? That only makes you feel down-hearted with old exploits which the concerned software/website might have already patched. How else can we know the fresh exploits?? 'FRESH' I mean !! Sounds good.. ehh?!
+
+On May 29th, 2013 I ran into this mailing list - Full Disclosure'. Subscribed to 3 of them 'Full Disclosure', 'aasf', 'fdgnffg'. Guess what I was able  to find?
+
+* Exploit in Samsung's site!! The original exploiter managed to insert some code into the URL which can make the page display an alert box.. without the concern of Samsung!! Naive users can be tricked to click on it to be redirected to malicious pages or any more evil things you can imagine !!!
+
+* Now it's the great brother CISCO's turn !! OMNG... Thanks to 'Full-Disclosure'. Some reasearcher managed to find that it is vulnerable to 'IFrame Injection Attack'. By this we can make a major part of a page to display our intended (malicious or whatever) page.. This can create an illusion hat the "CISCO' site itself is promoting it !! Worse, It can be used to display Phished Facebook Login page which you host at some other server and the naive user can think that CISCO itself is asking him to login !! Now you know how the enetered Facebook credentials can be extracted..
+
+With more of teh updates from 'Full-Disclosure' and the likes.. now you too can be better informed and as the time passes you can learn more than what you could've learned in a (Drumbeats!!!) "2-day Ethical Hacking workshop".

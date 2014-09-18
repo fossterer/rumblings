@@ -1,0 +1,38 @@
+Sun 22 Dec 2013 03:28:53 PM EST  -- Python @ Codeacademy begins!
+
+Learning Python -- for a Java programmer
+
+*	Variables don't need their datatypes
+*	Exponentiation has an operator **
+
+*	As always, you use 'Dot notation' when the methods being called are members of a class
+		   but directly use methods when they are usable in a wider sense (not tied to a single class)
+	(ie)   print len(ministry)			BUT
+	       print ministry.upper()
+*	Method bodies should be indented
+*	Indentation avoids the usage of curly braces for function bodies
+
+*	Strings are native objects and hence certain methods are readily accessible as soon as you define a string variable
+*	Strings can be accessed as literals and are index-accessible by specifying offsets
+	eg: fifth_letter = "PYTHON"[4] is valid in Python!
+*	Convert any non-string type to string just by passing it to 'str()'
+	{Consider it as type-casting or building a string object using constructor}
+
+*	From Python 3, print is no more a statement, to be used as in - 'print "Hi!"'		BUT
+		       it is a function and hence should be used as - 'print()'. Also it now allows 'keyword arguments'
+	A huge releif for Java Programmers:: We can use string concatenation inside a 'print()' method of Python just as we can in 'System.out.print()' of Java !
+*	The 'String Formatting' for the programmers who have to work with 2.x variants for some reason, is a bit whacky. It resembles the C counterpart as --
+		printf("Let's not go to %s. 'Tis a silly %s", string_1, string_2);		# No I didn't mean C is whacky :O .. Never meant in fact
+	For python 2.x, Think --
+		print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)		# In fact % (string_1, string_2) is only used a replacement for 's' in %s, but position-dependent
+	For 3.x programmers, life is a breeze as we can do it the natural way as in Java. Think --
+		print(Let's not go to " + string_1 + ". 'Tis a silly " + string_2.")
+	Yeh, hui na baat!
+*	However, Unlike in Java, you can't expect ints inside a print() method to be implicitly cast to a string in case of concatenation. I mean --
+		Valid in Java:	System.out.print("My roll no. is" + roll_no)		//'roll_no' is an int
+		To be valid in Python:	print("My roll no. is" + str(roll_no) )		//'roll_no' is an int; If you miss 'str()', you'll get the exception as -
+			TypeError: cannot concatenate 'str' and 'int' objects
+
+*	Python doesn't care much if you are comparing and 'int' and a 'float'
+*	'if' does not require conditions to be specified inside parantheses. Hence you terminate the condition with a COLON (:)
+*	
