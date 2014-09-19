@@ -1,0 +1,6 @@
+Speech by Chetan Bhagat at Symbiosis...
+A must read...
+
+"Don’t just have career or academic goals. Set goals to give you a balanced, successful life. I use the word balanced before successful. Balanced means ensuring your health, relationships, mental peace are all in good order. There is no point of getting a promotion on the day of your breakup. There is no fun in driving a car if your back hurts. Shopping is not enjoyable if your mind is full of tensions."Life is one of those races in nursery school where you have to run with a marble in a spoon kept in your mouth. If the marble falls, there is no point coming first. Same is with life where health and relationships are the marble. Your striving is only worth it if there is harmony in your life. Else, you may achieve the success, but this spark, this feeling of being excited and alive, will start to die…One thing about nurturing the spark - don't take life seriously. Life is not meant to be taken seriously, as we are really temporary here. We are like a prepaid card with limited validity. If we are lucky, we may last another 50 years. And 50 years is just 2,500 weekends. Do we really need to get so worked up? …It's OK, bunk a few classes, scoring low in couple of papers, goof up a few interviews, take leave from work, fall in love. We are people, not programmed devices....."
+
+Cheers!
