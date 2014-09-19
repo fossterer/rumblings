@@ -1,0 +1,28 @@
+#The following script template was not written by me
+
+A template file to use when writing shell scripts.
+------------------------------------------------------
+
+The trap statement emits an error if a command fails. Without the trap and the -e, it is easy for the script to quit early without you realizing it.
+
+#!/bin/bash -e
+
+trap '
+SAVEDSTATUS=$?
+set +x
+if [ x$CLEANEXIT = x ]
+then
+echo "$0: ERROR Unexpected exit with return value of $SAVEDSTATUS"
+exit $SAVEDSTATUS
+fi' EXIT
+
+#-----
+
+###
+### Your code goes here
+###
+
+#-----
+
+CLEANEXIT=1
+exit 0
