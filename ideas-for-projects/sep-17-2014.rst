@@ -1,0 +1,10 @@
+Parsing emails to define tasks that synchronise across all devices/interfaces
+------------------------------------------------------------------------------
+
+Category:   Automation
+======================
+
+#) Use Python to receive emails -- a continuous action
+#) Search for terms - "Today", "Tomorrow", "Sep 27", "09/07/2014", etc. -- all possible specifications of "Time (NOT exclusively the clock time)"
+#) Use Python to crawl into 'Google Calendar', "anacron (AND any other scheduling programs that are available to the user)"
+#) Add the event in the required format and commit
