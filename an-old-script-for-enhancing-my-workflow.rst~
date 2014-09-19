@@ -1,1 +1,0 @@
-for i in {'default','communications'}; do firefox --no-remote -P $i & done
