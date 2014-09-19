@@ -7,8 +7,8 @@ Must follow Linux articles [both current affairs awa standard articles - https:/
 =======
 https://medium.com/@kevin_ashton/creative-people-say-no-bad7c34842a2
 <<<<<<< HEAD
+>>>>>>> f6f6c38e86629a6120dc2f86f4f8d886012133cb
+=======
 http://jamesclear.com/2014-integrity-report
 http://jamesclear.com/values-choices
-=======
->>>>>>> f6f6c38e86629a6120dc2f86f4f8d886012133cb
->>>>>>> 7cbdd8028db50a3a0c73f932e1334e053f1b0f86
+>>>>>>> Added one file
