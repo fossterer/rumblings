@@ -1,0 +1,42 @@
+shashank@sensors-OptiPlex-755:~/Downloads$ python
+Python 2.7.6 (default, Mar 22 2014, 22:59:38) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> bin_names = ['-'.join(start, end) for start,end in range(0,44,8)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> bin_names = ['-'.join(start, end) for start in range(0,44,8)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'end' is not defined
+>>> bin_names = ['-'.join(start, start+8) for start in range(0,44,8)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: join() takes exactly one argument (2 given)
+>>> bin_names = ['-'.join([start, start+8]) for start in range(0,44,8)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sequence item 0: expected string, int found
+>>> bin_names = ['-'.join([start, str(start+8])) for start in range(0,44,8)]
+  File "<stdin>", line 1
+    bin_names = ['-'.join([start, str(start+8])) for start in range(0,44,8)]
+                                             ^
+SyntaxError: invalid syntax
+>>> bin_names = ['-'.join([start, str(start+8)]) for start in range(0,44,8)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sequence item 0: expected string, int found
+>>> bin_names = ['-'.join([str(start), str(start+8)]) for start in range(0,44,8)]
+>>> bin_names
+['0-8', '8-16', '16-24', '24-32', '32-40', '40-48']
+>>> bin_names = ['-'.join([start, start+7]) for start in range(0,44,8)]Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sequence item 0: expected string, int found
+>>> bin_names = ['-'.join([start, start+7]) for str(start) in range(0,44,8)]
+  File "<stdin>", line 1
+SyntaxError: can't assign to function call
+>>> bin_names = ['-'.join([str(start), str(start+7)]) for start in range(0,44,8)]
+>>> bin_names
+['0-7', '8-15', '16-23', '24-31', '32-39', '40-47']
+>>>

@@ -1,0 +1,5 @@
+[attachment: -rumblings-apr-23-2014-listing]
+
+I have a box plot but I need to generate titles. The data is in float, mostly with no lower & end upper bounds present; moreover the bins would be constructed on the fly;
+
+Now, I know binSize. I know the minimum and maximum. So I all I need is a list of strings with intervals - intervals of width 7
