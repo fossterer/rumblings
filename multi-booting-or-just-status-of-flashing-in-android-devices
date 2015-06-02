@@ -4,10 +4,35 @@ So,
 - You can multi-boot your phone just as you do with your PCs: MultiRom, Grub4android.org
 	-- MultiRom being the most preferred and in active development
 	-- grub4android is the most interesting for me since it is equivalent to what I am blessed to do everyday on my PC
-		--- At boot time, you can select which ROM to boot to! Amazing, isn't it? This way you can test those SailfishOS and Ubuntu Touch being ported to OnePlus One which lack critical functionality (at the time of this writing - Tue 02 Jun 2015 02:46:54 PM EDT)
+		--- At boot time, you can select which ROM to boot to! Amazing, isn't it? This way you can test those SailfishOS and Ubuntu Touch being ported to OnePlus One which lack critical functionality (at the time of this writing - Tue 02 Jun 2015 02:46:54 PM EDT); yeah, also OxygenOS is there to take a look at
 - There was a project named 'Bump' brought up by some developer on xda-threads which (in layman's terms) modifies your custom kernels so that the recent very restricting LG devices could be tricked into accepting them. The developer tried a lot to keep the project closed-source and now terinated the project! WHY???
 	Because, the project made a few others' minds run with the learned awareness of this new possibility and they published an 'OpenBump' project (you get the idea). The Openbump seems to be active till today
+
+There's a lot to know, lot to learn and try but one thing to be aware of. This is to everyone:
+You can't keep complaining that some project is dead or unresponsive as most of these devs are undertaking these besides their regular day jobs. Most of them may not have any monetary gains at all. If you feel some project is useful and has to exist, ask the developers how you can contribute to the project. Most of the project websites have a 'How to Contribute' section - read it. If the project is on Github, look for the relevant 'CONTRIBUTORS' guide. If you cannot code, offer to 'Translate' the project to any other languages (I mean 'human languages'!) you are comfortable with. Most troubling issue with softwares is the lack of proper documentation and these projects, being developed aside the developers' day jobs, they may not contain proper documentation. If you feel the project/app is good, offer to do documentation for it. This way it gets spread to more users which increases the project's survival as well as addition of new features by any of those new users. You can always choose to do monetary contributions to those developers of your projects too: look for 'Donate', 'Gittip' etc. provisions in the page.
 
 Well, what's going to happen to that Redmi Note 4G? That's a great different interesting thing! Apparently the updating part of Xiaomi devices is simply an 'Updater app'! So, download your ROM (in this case, the old version) and select 'From file' (or the like) in 'Update' section on teh device. That's all! The chosen ROM gets installed!
 
 So no rooting, no adb, fastboot stuff! Never earlier knew that such flashing process could be officially supported by the manufacturers themselves in this manner!
+
+References:
+
+https://www.youtube.com/watch?v=QnhZldSpM98
+https://www.youtube.com/watch?v=QJIZ1D-k6hc&index=1&list=LL81ZibJhoVsku-5ZTZ0lNow
+
+http://forum.xda-developers.com/lg-g2/general/bootloader-grub4android-multiboot-t2898512/page4
+
+
+http://forum.xda-developers.com/sprint-lg-g3/orig-development/bump-sign-unlock-boot-images-lg-phones-t2935278/page6
+http://apps.codefi.re/bump/
+http://forum.xda-developers.com/showpost.php?p=56987541
+
+
+http://en.miui.com/download-218.html#363
+http://en.miui.com/forum.php?mod=viewthread&tid=24860
+https://forums.oneplus.net/threads/sailfish-os-for-oneplus-one.279537/
+http://forum.xda-developers.com/showpost.php?p=55715829
+https://forums.oneplus.net/threads/wip-ubuntu-touch-for-oneplus-one.266170/
+
+http://standardsandfreedom.net/index.php/2014/07/14/foss-economics/
+http://standardsandfreedom.net/index.php/2014/10/12/free-software-money/
