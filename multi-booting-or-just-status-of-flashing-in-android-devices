@@ -1,0 +1,13 @@
+NOTE: This is what happens when your brother calls you up asking how to go back to an old ROM on his Xiaomi Redmi Note 4G LTE. The research takes you to places!
+
+So,
+- You can multi-boot your phone just as you do with your PCs: MultiRom, Grub4android.org
+	-- MultiRom being the most preferred and in active development
+	-- grub4android is the most interesting for me since it is equivalent to what I am blessed to do everyday on my PC
+		--- At boot time, you can select which ROM to boot to! Amazing, isn't it? This way you can test those SailfishOS and Ubuntu Touch being ported to OnePlus One which lack critical functionality (at the time of this writing - Tue 02 Jun 2015 02:46:54 PM EDT)
+- There was a project named 'Bump' brought up by some developer on xda-threads which (in layman's terms) modifies your custom kernels so that the recent very restricting LG devices could be tricked into accepting them. The developer tried a lot to keep the project closed-source and now terinated the project! WHY???
+	Because, the project made a few others' minds run with the learned awareness of this new possibility and they published an 'OpenBump' project (you get the idea). The Openbump seems to be active till today
+
+Well, what's going to happen to that Redmi Note 4G? That's a great different interesting thing! Apparently the updating part of Xiaomi devices is simply an 'Updater app'! So, download your ROM (in this case, the old version) and select 'From file' (or the like) in 'Update' section on teh device. That's all! The chosen ROM gets installed!
+
+So no rooting, no adb, fastboot stuff! Never earlier knew that such flashing process could be officially supported by the manufacturers themselves in this manner!
