@@ -1,0 +1,1 @@
+Started out with regular 'brute-force attacks' mthos. The tool 'wordfield-0.1beta1' simpified the task by supplying words on-the-fly. The speeds are dangerously slow on my Core i3 2nd generation processor system with 3G Ram - ETA: 61031 - 93290 days for cracking WPA2 password of a single network [Image attached]
