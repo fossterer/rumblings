@@ -1,0 +1,16 @@
+No, this is not a question that takes answers as - monitor, printer, speakers etc.
+
+I'm asking this question from a lower level than that. So far A monito (VGA/HDMI/DVI/D-SUB etc.) has been my only idea of looking into what's happening inside a computing system. Wait! recently did I learn that SSHing should let you peek into a system which out-of-the-box does not support any standard display formats. Well, over ethernet, it is. Fine.
+
+Today with this USB-to-Serial cable(http://www.ebay.com/itm/Set-CP2102-USB-2-0-To-UART-TTL-5Pin-Module-Serial-Converter-Cables-For-Arduino-/311210397876?pt=LH_DefaultDomain_0&hash=item487595d0b4), I could - power on, see kernel messages (while booting), send input and receive output from a RaspberryPi (Model B). This gives me one more way to look inside a system. Let's count now!
+
+* A VGA/HDMI?DVI/D-SUB interface -- to a monitor
+* Ethernet port -- SSH (should support DHCP beforehand OR a static address already configured)
+* GPIO (with atleast PWR, GND, Rx and Tx available as pins) -- screen <portname on host> <baud rate> OR any serial terminal emulator
+
+QUESTIONS
+---------
+
+Given that a laptop/PC can get powered on, can I access it over Ethernet, Serial etc?
+      - Without any OS?
+      - Any other interfaces than the 3 above?
