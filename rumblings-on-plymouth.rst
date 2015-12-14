@@ -1,0 +1,1 @@
+Plymouth. Ubuntu's repositories have very little no. of themes. most of the information on how to create your own theme and write a plugin (both are not same but related) can be obtained by starting your search in Wikipedia (Wiki page --> Website of Plymouth and then following all the hyperlinks below in that 'freedesktop wiki' page)
