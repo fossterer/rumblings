@@ -1,0 +1,11 @@
+When your code has two points that are capable of producing exit conditions (in a loop), firing of any one may cause the exiting which may not be desirable in scenarios such as counting events (events contained in each of the above said two points) - best solution is to stop further processing only the fired event; however this can cause new problems (see next paragraph)
+
+Suppose this entire module itself is inside a loop (imagine processing a text file) - in this case, stopping the processing of one event and proceeding the other requires that a handle be set pointing here since proceeding further, one may encounter the occurrences of this already stopped condition which should be offered to be processed in the next iteration. One may argue that now, the lately-fired event, in this iteration might be counting the occurrences which were already processed in the previous iteration.
+
+Now the deal breaker would be having two different iterators working independent of each other and producing two results which can be combined after these two iterators (in our case, two loops produce two counts which can be added to get final count). Essentially, two different iterators would be reading the same file (don't get the unnecessary idea of multithreading - that isn't a requirement here)
+
+NOTE: It may seem that two counts of firings be set the requisite for exiting but this leads to counting of non-applicable occurrences of the already fired event - in fact, this is a maximal counting(?) approach 
+
+See the accompanying images - coding-rants.png, coding-rants(after modification).png
+
+The code in question is attached as packet-rate-over-distance-extractor-using-sent-time.py
