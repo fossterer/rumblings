@@ -1,0 +1,17 @@
+Programming Titbits:
+
+If you have, for eg: ROWS in your TABLE class.. remember to set it everytime you create a new instance of the class... even if your requiremnt is inside its own method.. ELSE it is safe to use table2.length (assuming the name of the new instance is 'table2') wherever applicable
+
+Everytime you create an instance of such TABLE class, even inside its own method, check if you've to initialise its array member - 'table' before copying contents of received argument array into it.
+
+A fields[] = line.split(","); may run alright with no initial size supplied for 'fields[]' but not a 'System.arraycopy()'
+
+Always look out if you are placing a counter variable increment (eg: in 'while loop') inside a conditional... If the condition doesn't get executed, the increment won't occur and the while loop receives the same argument and hence it becomes an infinite loop
+
+An idiot called "strArray[i].matches(<regExp>)" never works if there is a possibility of a 'null' in values of strArray[i]
+
+An irritating 'NullPointerException' could be because you specified 'Row size' but not 'Column size' in your array declaration but trying to use 'System.arrayCopy()'
+
+If results from different iterations of same quantity are producing zeroes/nulls where the last iterations are not, check if you are allocating 'new' memory inside the loop as that could be causing the previous memory to be lost and hence the values
+
+
